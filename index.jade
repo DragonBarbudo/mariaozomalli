@@ -1,0 +1,106 @@
+include _config.jade
+
++html5
+  +head('DW4', 'Palabras clave', 'Descripción')
+  
+  body(ng-app="dw4")
+    .container.fluid.maincontainer
+    
+      .c2.menucontainer.tac.cm0
+      
+        label(for="menubtn").onlym.fa.fa-bars
+        input(type="checkbox" id="menubtn").hidden
+        .menu(hl-sticky)
+          h1: img(src="app/img/maria-ozomalli.png", alt="María Ozomalli")
+          +menu
+          .menufooter
+            a(href="https://www.facebook.com/MariaOzomalli/", target="_blank").social Síguenos en Facebook  
+              i.fa.fa-facebook
+              
+      .c10.main.cm12
+      
+        section.container#inicio.middle
+          .c8.o2
+            p Bienvenido
+            .hr
+            h2 
+              | María Ozomalli, <br>
+              | una forma de expresión.
+            p Diseños únicos, cómodos y atractivos, con detalles sutiles y artísticos.
+            .tac
+              a(href="#que-es-maria-ozomalli", du-smooth-scroll): img(src="app/img/arrow-bottom.png", alt="Ir hacia abajo")
+        
+        
+        
+        // QUE ES MARIA OZOMALLI
+        section.container#que-es-maria-ozomalli
+          .c8.o2
+            h2 ¿Qué es María Ozomalli?
+            p Es una firma de autor de la diseñadora mexicana Maria Ozomalli.
+            p Nuestra premisa es crear nuestras propias tendencias y estilos donde lo urbano se mezcla con lo tradicional y la comodidad con elegancia.
+    
+          .c12: .image-a.diagonal.bottom
+            div Cualquier cosa es posible, <span>la creatividad no tiene limites.</span>
+            
+          .c5.o2
+            h3 Prendas únicas
+            p María Ozomalli® se distingue por los altos estándares de calidad en todo el proceso de produccion, que va desde el trabajo artistico e intelectual en la planeacion de cada diseño, el cuidado que se tiene a la hora de elegir las telas, como el algodón  y los tejidos naturales en su mayoría, y los acabados a mano que la diseñadora da a cada prenda para hacerla única.
+            .hr
+          .c2.o1.g.outline
+            img(src="app/img/prendas-unicas.jpg", alt="Prendas únicas")
+          
+          .c12: .image-b.diagonal.top
+            div <span>La moda es expresión,</span> no distinción.
+            
+            
+          .c2.o2.g.outline
+            img(src="app/img/economia-local.jpg", alt="Economía local")
+          .c5.o1
+            h3 Economía local
+            p Insistimos en apoyar la economía local utilizando insumos nacionales, y dando empleo a gente local.
+            .hr
+          
+          
+        // INSPIRACIÓN
+        section.container#inspiracion
+          .c8.o2
+            h2 Inspiración
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum sint labore quibusdam iste facere facilis eius doloribus laudantium repudiandae nam nemo hic sed porro quis, doloremque impedit consequuntur est! Odit.
+              
+          .c12: .image-c.diagonal.top
+            div <span>Inspiración histórica,</span> en un mundo moderno.
+        
+        
+        // Diseños personalizados
+        section.container#disenos-personalizados
+          .c8.o2
+            h2 Diseños personalizados
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum sint labore quibusdam iste facere facilis eius doloribus laudantium repudiandae nam nemo hic sed porro quis, doloremque impedit consequuntur est! Odit.
+          
+          .container.mt2
+            .c3.o1.g.outline
+              img(src="app/img/personalizado-a1.jpg", alt="Diseños personalizados")
+            .c2.o1.g.outline
+              img(src="app/img/personalizado-a2.jpg", alt="Diseños personalizados")
+            .c2.o1.g.outline
+              img(src="app/img/personalizado-a3.jpg", alt="Diseños personalizados")
+          
+          .container.mt2
+            .c2.o1.g.outline
+              img(src="app/img/personalizado-b1.jpg", alt="Diseños personalizados")
+            .c2.o1.g.outline
+              img(src="app/img/personalizado-b2.jpg", alt="Diseños personalizados")
+            .c3.o1.g.outline
+              img(src="app/img/personalizado-b3.jpg", alt="Diseños personalizados")
+          
+          .container.mt2
+            .c3.o1.g.outline
+              img(src="app/img/personalizado-c1.jpg", alt="Diseños personalizados")
+            .c2.o1.g.outline
+              img(src="app/img/personalizado-c2.jpg", alt="Diseños personalizados")
+            .c2.o1.g.outline
+              img(src="app/img/personalizado-c3.jpg", alt="Diseños personalizados")
+
+
+  
+    +scripts

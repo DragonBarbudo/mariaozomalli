@@ -1945,3 +1945,12 @@ slick .slick-slide a {
     margin: 10px;
   }
 }
+#contacto p {
+  padding: 20px 0;
+}
+#contacto p a {
+  color: #2282C2;
+}
+#contacto p a i {
+  margin-right: 20px;
+}

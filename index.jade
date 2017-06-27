@@ -133,4 +133,25 @@ include _config.jade
                   a(href="http://res.cloudinary.com/maria-ozomalli/{{img.public_id}}" title="{{img.tags[0]}}" rel="{{img.tags[0]}}").ng-box.outline
                     img(ng-src="http://res.cloudinary.com/maria-ozomalli/{{img.public_id}}").fluid
 
+        
+        //Contacto  
+        section.container#contacto
+            .c8.o2
+              h2 Contacto
+              p Encuéntranos en:
+              p
+                a(href="https://www.facebook.com/MariaOzomalli/" target="_blank")
+                  i.fa.fa-facebook
+                  span Facebook
+              .hr
+              p: a(href="tel:5561644357")
+                i.fa.fa-phone
+                span 55 61 64 43 57
+              .hr
+              p: a(href="tel:5591391130")
+                i.fa.fa-phone
+                span 55 9139 1130
+              .hr
+              p Estamos ubicados en Tepoztlan, Morelos.
+
     +scripts

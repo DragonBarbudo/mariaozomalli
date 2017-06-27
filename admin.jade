@@ -1,0 +1,67 @@
+include _config.jade
+
++html5
+  +head('María Ozomalli', '', 'María Ozomalli, una forma de expresión')
+  
+  body(ng-app="dw4")
+    .container.fluid.maincontainer(ng-controller="AdminCtrl")
+    
+      form.loginform(ng-submit="login()" ng-hide="loggedIn")
+        .modal
+        .access.tac
+          input(type="password" ng-model="keyaccess" placeholder="Clave de acceso")
+          button(type="submit").button Ingresar
+          p(ng-show="loginerror").loginerror {{loginerror}}
+      
+      .c2.menucontainer.tac.cm0(ng-show="loggedIn")
+      
+        label(for="menubtn").onlym.fa.fa-bars
+        input(type="checkbox" id="menubtn").hidden
+        .menu(hl-sticky)
+          h1: img(src="app/img/maria-ozomalli.png", alt="María Ozomalli")
+          //+menu
+          
+            
+          
+        
+      .c10.main.cm12(ng-show="loggedIn")
+
+        section#admin
+          .container
+            .c10.o1
+              h2 Administrador
+              
+          .container
+            .c5.o1
+              h3 Galerías
+              blockquote Para agregar imagenes a la galería presionar #[i.fa.fa-plus] . Para eliminar galerías se deben borrar las imagenes que corresponden a esta en la parte inferior.
+            .c5.tar
+              form.newgalform(ng-submit="newgal()")
+                input(type="text" ng-model="newgalName" placeholder="Galería nueva")
+                button(type="submit").button Crear galería
+          .container
+            .c10.o1
+              .container
+                form(ng-submit="ngUpload(gal)" ng-repeat="gal in galerias").c4.cm6
+                  .container
+                    .hr.c12
+                    .c3: button(title="Agregar imagen" data="{{gal}}").button.button-small.addToGal: i.fa.fa-plus
+                    .c9 {{gal}}
+                
+                      
+          .container.mt2
+            .c10.o1
+              h3 Imagenes en sistema
+              blockquote Dando click en el botón #[i.fa.fa-times ] se eliminará la imagen. En la parte inferior de cada imagen se encuentra el nombre de la galería a la que pertenece.
+                  
+          .container.mt2: .c10.o1
+            .container
+            
+                .c3.cm6.g(ng-repeat="img in galleryList track by $index").imageuploaded
+                  a(href="http://res.cloudinary.com/maria-ozomalli/{{img.public_id}}" title="{{img.tags[0]}}").ng-box: img(ng-src="http://res.cloudinary.com/maria-ozomalli/{{img.public_id}}").fluid
+                  button(ng-click="deleteImg(img.public_id, $index)" title="Eliminar imagen"): i.fa.fa-times
+                  .fromGallery {{img.tags[0]}}
+                      
+  
+    +scripts
+    

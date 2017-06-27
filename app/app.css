@@ -1573,10 +1573,34 @@ body {
   color: #f5f5f5;
   font-family: 'Pt Serif', serif;
 }
+.menucontainer label.fa-bars {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 9999999;
+  font-size: 30px;
+  cursor: pointer;
+}
+.menucontainer #menubtn:checked + .menu {
+  margin-left: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
 .menucontainer .menu {
   background: url(img/menu_bg.png);
   height: 100%;
   position: relative;
+}
+@media only screen and (max-width: 720px) {
+  .menucontainer .menu {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    margin-left: -100%;
+  }
 }
 .menucontainer .menu:after {
   content: "";
@@ -1593,9 +1617,20 @@ body {
 .menucontainer .menu h1 {
   padding: 30px 0;
 }
+@media only screen and (max-width: 720px) {
+  .menucontainer .menu h1 {
+    padding: 10px 0;
+  }
+}
 .menucontainer .menu h1 img {
   width: 90%;
   max-width: 130px;
+}
+@media only screen and (max-width: 720px) {
+  .menucontainer .menu h1 img {
+    width: auto;
+    height: 80px;
+  }
 }
 .menucontainer .menu nav {
   overflow-y: auto;
@@ -1603,6 +1638,11 @@ body {
 }
 .menucontainer .menu nav ul li {
   margin: 10px 0;
+}
+@media only screen and (max-width: 720px) {
+  .menucontainer .menu nav ul li {
+    margin: 0;
+  }
 }
 .menucontainer .menu nav ul li a {
   display: block;
@@ -1647,13 +1687,31 @@ body {
   background: url(img/menu_bg.png);
   font-size: 0.9em;
 }
+@media only screen and (max-width: 720px) {
+  .menucontainer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+  }
+}
 h2 {
   font-size: 3em;
   font-family: 'Pt Serif', serif;
 }
+@media only screen and (max-width: 720px) {
+  h2 {
+    font-size: 2em;
+  }
+}
 h3 {
   font-size: 2em;
   font-family: 'Pt Serif', serif;
+}
+@media only screen and (max-width: 720px) {
+  h3 {
+    font-size: 1.4em;
+  }
 }
 p {
   margin: 20px 0;
@@ -1673,6 +1731,12 @@ p {
   height: 180px;
   background-image: url(img/outline-img.png);
   background-repeat: no-repeat;
+}
+@media only screen and (max-width: 720px) {
+  .outline:before {
+    width: 40px;
+    height: 50px;
+  }
 }
 .diagonal {
   background-size: cover;
@@ -1729,11 +1793,11 @@ p {
 }
 /* ############## */
 #inicio {
-  min-height: 100%;
   background-image: url(img/inicio.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 200px 0;
 }
 #inicio p {
   font-size: 1.2em;
@@ -1746,6 +1810,12 @@ p {
 }
 #inicio h2 + p {
   font-size: 1.8em;
+  font-size: 1.4em;
+}
+@media only screen and (max-width: 720px) {
+  #inicio h2 {
+    font-size: 2em;
+  }
 }
 #inicio a {
   display: block;
@@ -1759,12 +1829,119 @@ p {
 #que-es-maria-ozomalli,
 #inspiracion,
 #disenos-personalizados,
-#disenos-para-tu-empresa {
+#disenos-para-tu-empresa,
+#galeria,
+#contacto,
+#admin {
   padding: 100px 0;
 }
 #inspiracion {
   background: rgba(0, 0, 0, 0.3);
 }
-#disenos-personalizados .mt2 {
+#disenos-personalizados .mt2,
+#disenos-para-tu-empresa .mt2 {
   margin-top: 80px;
+}
+.imageuploaded {
+  margin-bottom: 20px;
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+}
+.imageuploaded .fromGallery {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  background: rgba(24, 27, 32, 0.7);
+  padding: 5px;
+  font-size: 0.8em;
+  width: 100%;
+}
+.imageuploaded button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #2282C2;
+  color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  padding: 1px 5px;
+}
+.newgalform input {
+  background: #000;
+  padding: 10px;
+}
+.addToGal {
+  width: 80%;
+  padding: 0;
+}
+form.loginform .modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(47, 54, 64, 0.95);
+  z-index: 999999;
+}
+form.loginform .access {
+  position: fixed;
+  left: 0%;
+  top: 50%;
+  width: 340px;
+  margin-top: -30px;
+  background: #2282C2;
+  z-index: 9999991;
+  -webkit-box-shadow: 0 0 30px #272d35;
+  -moz-box-shadow: 0 0 30px #272d35;
+  box-shadow: 0 0 30px #272d35;
+  padding: 10px 0 ;
+}
+form.loginform .access input {
+  padding: 8px;
+  background: #272d35;
+}
+form.loginform .loginerror {
+  color: #2F3640;
+  padding: 5px;
+}
+blockquote {
+  font-size: 0.8em;
+  color: #cccccc;
+}
+blockquote i {
+  color: #2282C2;
+}
+slick .slick-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 0;
+}
+slick .slick-arrow:after {
+  font-family: FontAwesome;
+  font-size: 20px;
+}
+slick .slick-arrow.slick-prev {
+  left: -40px;
+}
+slick .slick-arrow.slick-prev:after {
+  content: "\f053";
+}
+slick .slick-arrow.slick-next {
+  right: -40px;
+}
+slick .slick-arrow.slick-next:after {
+  content: "\f054";
+}
+slick .slick-slide a {
+  display: block;
+  margin: 40px 20px;
+}
+@media only screen and (max-width: 720px) {
+  slick .slick-slide a {
+    margin: 10px;
+  }
 }

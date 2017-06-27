@@ -13,6 +13,26 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/admin.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin.jade",
+		"outputAbbreviatedPath": "\/admin.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/app\/app.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -135,6 +155,61 @@
 		"initialSize": 44095,
 		"inputAbbreviatedPath": "\/app\/img\/economia-local.jpg",
 		"outputAbbreviatedPath": "\/app\/img\/economia-local.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/empresa-a.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 113468,
+		"inputAbbreviatedPath": "\/app\/img\/empresa-a.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/empresa-a.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/empresa-b.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 110691,
+		"inputAbbreviatedPath": "\/app\/img\/empresa-b.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/empresa-b.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/empresa-c.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 154453,
+		"inputAbbreviatedPath": "\/app\/img\/empresa-c.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/empresa-c.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/empresa-d.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 147196,
+		"inputAbbreviatedPath": "\/app\/img\/empresa-d.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/empresa-d.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/empresa-e.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 138717,
+		"inputAbbreviatedPath": "\/app\/img\/empresa-e.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/empresa-e.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -343,6 +418,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/js\/angular-sticky.js",
 		"outputAbbreviatedPath": "\/app\/js\/min\/angular-sticky-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/app\/js\/jquery.cloudinary.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/js\/jquery.cloudinary.js",
+		"outputAbbreviatedPath": "\/app\/js\/min\/jquery.cloudinary-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

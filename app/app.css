@@ -1624,7 +1624,7 @@ body {
 }
 .menucontainer .menu h1 img {
   width: 90%;
-  max-width: 130px;
+  max-width: 110px;
 }
 @media only screen and (max-width: 720px) {
   .menucontainer .menu h1 img {
@@ -1634,7 +1634,7 @@ body {
 }
 .menucontainer .menu nav {
   overflow-y: auto;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 .menucontainer .menu nav ul li {
   margin: 10px 0;
@@ -1646,7 +1646,7 @@ body {
 }
 .menucontainer .menu nav ul li a {
   display: block;
-  padding: 10px 40px;
+  padding: 4px 20px;
 }
 .menucontainer .menu nav ul li a:hover,
 .menucontainer .menu nav ul li a.active {
@@ -1679,12 +1679,7 @@ body {
 }
 .menucontainer .menu .menufooter {
   height: auto;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   padding: 10px 0;
-  background: url(img/menu_bg.png);
   font-size: 0.9em;
 }
 @media only screen and (max-width: 720px) {
@@ -1718,25 +1713,23 @@ p {
 }
 .outline {
   position: relative;
+  /*
+  &:before{
+    content:"";
+    position: absolute;
+    left: -20px; top: -14px;
+    width: 120px; height: 180px;
+    background-image: url(img/outline-img.png);
+    background-repeat: no-repeat;
+    @media @mobile{
+      width: 40px; height: 50px;
+    }
+  }
+
+  */
 }
 .outline img {
   width: 100%;
-}
-.outline:before {
-  content: "";
-  position: absolute;
-  left: -20px;
-  top: -14px;
-  width: 120px;
-  height: 180px;
-  background-image: url(img/outline-img.png);
-  background-repeat: no-repeat;
-}
-@media only screen and (max-width: 720px) {
-  .outline:before {
-    width: 40px;
-    height: 50px;
-  }
 }
 .diagonal {
   background-size: cover;

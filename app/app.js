@@ -21,10 +21,14 @@ app.config(function(){
 });
 
 
-app.run(function(){
+app.run(function($rootScope){
 
   $.cloudinary.config({ cloud_name: 'maria-ozomalli', api_key: '124524154799596'})
 
+
+  $rootScope.$on('duScrollspy:becameActive', function($event, $element, $target){
+    $('#menubtn').attr('checked',false);
+  });
 
 });
 
